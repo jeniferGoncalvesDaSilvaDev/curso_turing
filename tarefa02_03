@@ -1,0 +1,25 @@
+let produtoA = {"nome": "camiseta", "valor": 100.00, "internacional": true}
+let produtoB = {"nome": "perfume", "valor": 200.00, "internacional": true}
+let produtoC = {"nome": "sandália", "valor": 120.00, "internacional": false}
+let imposto_internacional = produtoA
+let imposto_internacional2= produtoB
+let imposto_nacional = produtoC
+valor_imposto_internacional = 1.2
+valor_imposto_nacional = 1.12
+
+//console.log(produtoA)
+//console.log(produtoA["internacional"])
+
+if (produtoA["internacional"] && produtoB["internacional"] || produtoC["internacional"] ){
+    imposto_internacional = produtoA["valor"] * valor_imposto_internacional
+    imposto_internacional2 = produtoB["valor"] * valor_imposto_internacional
+    imposto_nacional = produtoC["valor"] * valor_imposto_nacional
+    console.log("produto nacional")
+    console.log(imposto_nacional)
+    console.log("produto internacional")
+    console.log(imposto_internacional)
+    console.log(imposto_internacional2)
+
+
+
+}
